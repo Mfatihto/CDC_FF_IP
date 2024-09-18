@@ -27,8 +27,8 @@ The flip-flop design includes:
 ```vhdl
 entity CDC_FF_IP is
     generic  (
-        N : integer := 2;						-- Number of flip-flops in the chain
-		ASYNC_RST : boolean := true				-- true --> async rst, false --> sync rst
+        N : integer := 2;			-- Number of flip-flops in the chain
+	ASYNC_RST : boolean := true		-- true --> async rst, false --> sync rst
 	);
     Port ( Clk : in STD_LOGIC;
            D : in STD_LOGIC;                    -- Input of the first FF in the chain
