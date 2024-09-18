@@ -21,7 +21,7 @@ This project includes both the VHDL implementation of the flip-flop chain and a 
 ## Design Details
 The flip-flop design includes:
 - A **generic parameter** for the number of flip-flops (`N`).
-- A **signal-controlled reset mode** (`reset_mode`), which dynamically selects between **synchronous** and **asynchronous** reset during simulation.
+- A **signal-controlled reset mode** (`ASYNC_RST`), which is a boolean dynamically selects between **synchronous** (false) and **asynchronous** (true).
 
 ### Flip-Flop Design
 ```vhdl
