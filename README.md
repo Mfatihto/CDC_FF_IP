@@ -14,8 +14,8 @@ This project includes both the VHDL implementation of the flip-flop chain and a 
 - **Clock Domain Crossing (CDC) Support**: Designed specifically for CDC applications to ensure reliable data transfer between clock domains.
 
 ## File Structure
-- `D_FlipFlop.vhd`: The main VHDL file that defines the generic flip-flop design.
-- `TB_D_FlipFlop.vhd`: The testbench for simulating and verifying the behavior of the flip-flop chain under different conditions.
+- `CDC_FF_IP.vhd`: The main VHDL file that defines the generic flip-flop design.
+- `CDC_FF_IP_Tb.vhd`: The testbench for simulating and verifying the behavior of the flip-flop chain under different conditions.
 - `README.md`: This file, providing details on how to use the project.
 
 ## Design Details
