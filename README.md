@@ -25,12 +25,13 @@ The flip-flop design includes:
 
 ### Flip-Flop Design
 ```vhdl
-entity D_FlipFlop is
-    Port (
-        D   : in  STD_LOGIC;    -- Data input
-        Clk : in  STD_LOGIC;    -- Clock input
-        Rst : in  STD_LOGIC;    -- Reset input
-        reset_mode : in STD_LOGIC; -- Reset mode: '1' = asynchronous, '0' = synchronous
-        Q   : out STD_LOGIC     -- Data output
-    );
-end D_FlipFlop;
+entity CDC_FF_IP is
+    generic  (
+        N : integer := 2;						-- Number of flip-flops in the chain
+		ASYNC_RST : boolean := true				-- true --> async rst, false --> sync rst
+	);
+    Port ( Clk : in STD_LOGIC;
+           D : in STD_LOGIC;                    -- Input of the first FF in the chain
+           Q : out STD_LOGIC;                   -- Output of the last FF in the chain
+           Rst : in STD_LOGIC);                 -- Reset input that resets every FF in the chain
+end CDC_FF_IP;
