@@ -34,15 +34,3 @@ entity D_FlipFlop is
         Q   : out STD_LOGIC     -- Data output
     );
 end D_FlipFlop;
-
-
-### Breakdown of the Markdown:
-
-- **Headers**: The `#` symbol is used for headers (`#` for title, `##` for sections, and `###` for subsections).
-- **Code Blocks**: Code blocks are surrounded by triple backticks (\`\`\`) with the language identifier (e.g., `vhdl` or `bash`).
-- **Lists**: Lists are created using `-` for unordered lists and `1.` for ordered lists.
-
-Now, you can simply copy-paste this into your `README.md` file for GitHub, and it will render correctly with the appropriate formatting.
-
-Let me know if you need any further adjustments!
-
